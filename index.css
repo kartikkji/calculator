@@ -23,8 +23,8 @@ h1{
 }
 .contant{
 
-    height: 50rem;;
-    width: 30rem;
+    height: 90%;
+    width: auto;
     
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@ h1{
 
 .contant .result-div{
     height: 5rem;
-    width: 95%;
+    width: auto;
     background-color: rgb(188, 216, 239);
     padding: 2%;
     border-radius: 1rem;
@@ -46,7 +46,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     height: 50rem;
-    width: 77%;
+    width: auto;
    
     padding: 11%;
     gap: 1rem 1rem;
