@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="main">
+        <h1>Calculator</h1>
+        <div class="contant">
+            <input class="result-div"></input>
+            <div class="numbers">
+                <button class="number" onclick="displayValue += '%';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> % </label>
+                </button>
+                
+                <button class="number" onclick="displayValue = '';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor" > C </label>
+                </button>
+                
+                <button class="number" onclick="displayValue += '/';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> / </label>
+                </button>
+                
+                <button class="number"
+                onclick=" let result = eval(displayValue);
+                displayValue = result;
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> =</label>
+                </button>
+                
+                <button class="number" onclick="displayValue += '7';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> 7 </label>
+                </button>
+                
+                <button class="number" onclick="displayValue += '8';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> 8 </label>
+                </button>
+                
+                <button class="number" onclick="displayValue += '9';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> 9 </label>
+                </button>
+                
+                <button class="number"onclick="displayValue += '*';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> X </label>
+                </button>
+                
+                <button class="number"onclick="displayValue += '4';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> 4 </label>
+                </button>
+                
+                <button class="number"onclick="displayValue += '5';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> 5 </label>
+                </button>
+                
+                <button class="number"onclick="displayValue += '6';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> 6 </label>
+                </button>
+                
+                <button class="number"onclick="displayValue += '-';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> - </label>
+                </button>
+
+                <button class="number"onclick="displayValue += '1';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> 1 </label>
+                </button>
+
+                <button class="number"onclick="displayValue += '2';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> 2 </label>
+                </button>
+
+                <button class="number"onclick="displayValue += '3';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> 3 </label>
+                </button>
+
+                <button class="number"onclick="displayValue += '+';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> + </label>
+                </button>
+
+                <button class="number"onclick="displayValue += '0';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> 0 </label>
+                </button>
+
+                <button class="number"onclick="displayValue += '.';
+                document.querySelector('.result-div').value = displayValue"><label class="opretor"> . </label>
+                </button>
+                
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    let displayValue = '';
+    document.querySelector('.result-div').value = displayValue;
+</script>
+<link rel="stylesheet" href="index.js">
+</html>

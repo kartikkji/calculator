@@ -1,0 +1,75 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    /* background-color: rgb(41, 31, 31); */
+}
+
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(6, 36, 63);
+    width: 30%;
+    text-align: center;
+}
+.contant{
+
+    height: 50rem;;
+    width: 30rem;
+    
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.contant .result-div{
+    height: 5rem;
+    width: 95%;
+    background-color: rgb(188, 216, 239);
+    padding: 2%;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+.contant .numbers{
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50rem;
+    width: 77%;
+   
+    padding: 11%;
+    gap: 1rem 1rem;
+    background-color: rgb(113, 170, 221);
+    justify-content: center;
+    border-radius: 1rem;
+
+}
+.numbers .number{
+    width: 5rem;
+    height: 5rem;
+    /* background-color: rgb(216, 199, 175); */
+    border: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.number .opretor{
+    color: rgb(0, 0, 0);
+    font-size: 2.3rem;
+    /* background: none; */
+    cursor: pointer;
+}
