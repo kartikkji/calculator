@@ -5,51 +5,53 @@
 }
 
 
+
 .main{
     height: 100vh;
-    width: 100vw;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 h1{
     font-weight: bold;
     font-size: 3rem;
     color: rgb(6, 36, 63);
-    width: 30%;
+    width: 100%;
     text-align: center;
 }
 .contant{
 
-    height: 90%;
-    width: auto;
-    
+    height: 100%;
+    width: 30rem;
     display: flex;
     justify-content: center;
-    padding: 1rem;
     flex-direction: column;
+    padding: 1rem;
 }
 
-.contant .result-div{
+.result-div{
     height: 5rem;
-    width: auto;
+    width: 100%;
     background-color: rgb(188, 216, 239);
-    padding: 2%;
     border-radius: 1rem;
     font-size: 2rem;
+    /* padding: 1rem; */
+    text-align: end;
+    overflow-x: auto;
 }
 
 .contant .numbers{
-    margin-top: 2%;
+    
     display: flex;
     flex-wrap: wrap;
     height: 50rem;
-    width: auto;
-   
-    padding: 11%;
-    gap: 1rem 1rem;
+    width: 30rem;
+    /* padding: 1rem; */
+    gap: 1rem 3rem;
     background-color: rgb(113, 170, 221);
     justify-content: center;
     border-radius: 1rem;
@@ -65,11 +67,56 @@ h1{
     align-items: center;
     border-radius: 1rem;
     cursor: pointer;
+    margin-top: 3%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+.number:hover {
+    background-color: #dcdcdc;
 }
 
 .number .opretor{
     color: rgb(0, 0, 0);
     font-size: 2.3rem;
-    /* background: none; */
     cursor: pointer;
+}
+
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .number {
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .result-div {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .number {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
+    }
+
+    .result-div {
+        font-size: 1.3rem;
+        height: 4rem;
+    }
+
+    .numbers {
+        gap: 0.7rem;
+        padding: 0.5rem;
+    }
 }
