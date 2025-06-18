@@ -15,7 +15,7 @@ A simple web-based calculator built with HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-[Live Calculator](https://your-live-link-here.com)
+[Live Calculator](https://kartikkji.github.io/calculator/)
 
 > Replace the above URL with your actual live deployment link (e.g., GitHub Pages, Vercel, Netlify, etc.).
 
